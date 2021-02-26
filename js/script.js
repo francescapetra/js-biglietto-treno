@@ -20,8 +20,10 @@ console.log (costo);
 document.getElementById('costo_biglietto').innerHTML = "Sconto Over applicato. Totale da pagare: " + "euro " + costo;
 document.getElementById('over').innerHTML = "Tariffa Over sconto 40%";
 document.getElementById('under').innerHTML = "";
-}else (eta >17<65)
-console.log (costo);
-document.getElementById('costo_biglietto').innerHTML = "Tariffa standard. Totale da pagare: " + "euro " + costo;
-document.getElementById('over').innerHTML = "";
-document.getElementById('under').innerHTML = "";
+}
+// // else (eta >18 < 65){
+// console.log (costo);
+// document.getElementById('costo_biglietto').innerHTML = "Tariffa standard. Totale da pagare: " + "euro " + costo;
+// document.getElementById('over').innerHTML = "";
+// document.getElementById('under').innerHTML = "";
+// }
