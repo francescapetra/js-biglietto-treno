@@ -6,7 +6,6 @@ if (isNaN (km)) {
   km = parseInt(prompt("inserire un valore numerico"));
 }
 
-
 // quanti anni ha l'utente
 var eta = parseInt(prompt("inserisci la tua età"));
 console.log(eta);
@@ -38,4 +37,4 @@ document.getElementById('costo_biglietto').innerHTML = "Tariffa standard. Totale
 document.getElementById('over').innerHTML = "";
 document.getElementById('under').innerHTML = "";
 }
-// solo else senza if e valori avrebbe funzionato lo9 stesso
+// solo else senza if e valori avrebbe funzionato lo stesso
