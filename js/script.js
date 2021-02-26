@@ -2,9 +2,10 @@
 var km = parseInt(prompt("Inserisci i kilometri da percorrere"));
 console.log(km);
 //
-// if ( isNAN (km)) {
-//   pareseInt(prompt( "inserire un valore numerico"));
-// }
+if (isNaN (km)) {
+  km = parseInt(prompt("inserire un valore numerico"));
+}
+
 
 // quanti anni ha l'utente
 var eta = parseInt(prompt("inserisci la tua età"));
@@ -30,9 +31,11 @@ document.getElementById('costo_biglietto').innerHTML = "Sconto Over applicato. T
 document.getElementById('over').innerHTML = "Cartafreccia Over 40%";
 document.getElementById('under').innerHTML = "";
 }
-// else (eta>=18) && (eta<= 64){
-// console.log (costo);
-// document.getElementById('costo_biglietto').innerHTML = "Tariffa standard. Totale da pagare: " + "euro " + costo;
-// document.getElementById('over').innerHTML = "";
-// document.getElementById('under').innerHTML = "";
-// }
+
+else if( (eta>=18) && (eta<= 64) ) {
+console.log (costo);
+document.getElementById('costo_biglietto').innerHTML = "Tariffa standard. Totale da pagare: " + "euro " + costo;
+document.getElementById('over').innerHTML = "";
+document.getElementById('under').innerHTML = "";
+}
+// solo else senza if e valori avrebbe funzionato lo9 stesso
