@@ -19,13 +19,13 @@ document.getElementById('titolo').innerHTML = "Grazie " + nome + "," + " procedi
 // condizioni
 
 if ( eta <= 17 ) {
-  costo = ((costo *80) / 100);
+  costo = ((costo *80) / 100).toFixed(2);
 console.log (costo);
 document.getElementById('costo_biglietto').innerHTML = "Sconto Under applicato. Totale da pagare: " + "euro " + costo;
 document.getElementById('under').innerHTML = "Cartafreccia Under 20%";
 document.getElementById('over').innerHTML = "";
 }else if (eta >= 65){
-  costo = ((costo *60) / 100);
+  costo = ((costo *60) / 100).toFixed(2);
 console.log (costo);
 document.getElementById('costo_biglietto').innerHTML = "Sconto Over applicato. Totale da pagare: " + "euro " + costo;
 document.getElementById('over').innerHTML = "Cartafreccia Over 40%";
